@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for b in book %}
+        <tr>
+            <td>{{ b.title }}</td>
+            <td>{{ b.author }}</td>
+            <td>{{ b.description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
